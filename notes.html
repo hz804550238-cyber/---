@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>笔记 | 彭时浩</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&family=Noto+Serif+SC:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    :root { --bg:#f4f6fb; --card:#fff; --text:#1f2430; --muted:#667085; --line:#e5eaf3; --brand:#5b6cff; --brand-soft:#ecefff; }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family:Inter,"Microsoft YaHei",sans-serif; color:var(--text); background:linear-gradient(180deg,#f8faff 0%,var(--bg) 48%,#f1f4fb 100%); }
+    .container { width:70%; max-width:none; padding:0 20px; margin:0 auto; }
+    .site-header { position:sticky; top:0; z-index:100; background:rgba(244,246,251,.82); backdrop-filter:blur(8px); border-bottom:1px solid var(--line);}
+    .header-inner { min-height:68px; display:flex; align-items:center; justify-content:space-between; gap:20px; }
+    .brand { text-decoration:none; color:var(--text); font-weight:700; }
+    .nav { display:flex; flex-wrap:wrap; gap:14px; }
+    .nav a { text-decoration:none; color:var(--muted); font-size:.95rem; padding:6px 8px; border-radius:8px; }
+    .nav a:hover,.nav a.active { color:var(--brand); background:var(--brand-soft); }
+    .section { margin:24px 0; padding:34px; border-radius:20px; border:1px solid var(--line); background:var(--card); box-shadow:0 6px 20px rgba(31,45,61,.04); }
+    .section h1 { margin:0 0 12px; font-family:"Noto Serif SC",serif; font-size:clamp(1.6rem,2.8vw,2.3rem); }
+    .section p { margin:0 0 14px; color:var(--muted); }
+    .notes-list { margin:0; padding-left:22px; color:var(--muted); }
+    .notes-list li { margin:10px 0; }
+    .notes-list a { color:#2f3a4a; }
+    @media (max-width: 640px){ .container{width:100%;} .header-inner{flex-direction:column; align-items:flex-start; padding:10px 0;} }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="./index.html">彭时浩 | Shitao Peng</a>
+      <nav class="nav" aria-label="主导航">
+        <a href="./index.html">首页</a>
+        <a href="./index.html#about">关于我</a>
+        <a href="./works.html">作品展示</a>
+        <a class="active" href="./notes.html">笔记</a>
+        <a href="./videos.html">视频</a>
+        <a href="./index.html#contact">联系</a>
+      </nav>
+    </div>
+  </header>
+  <main class="container">
+    <section class="section">
+      <h1>笔记</h1>
+      <p>这里记录了我关于 AI 趋势、产品逻辑以及生活美学的思考。</p>
+      <ol class="notes-list">
+        <li><a href="#" target="_blank" rel="noreferrer">AI 产品路径：从想法到可用 MVP</a></li>
+        <li><a href="#" target="_blank" rel="noreferrer">提示词不是魔法，是产品意图的表达</a></li>
+        <li><a href="#" target="_blank" rel="noreferrer">如何做一套可复用的 AI 评估指标</a></li>
+        <li><a href="#" target="_blank" rel="noreferrer">用户需求与模型能力边界的平衡</a></li>
+        <li><a href="#" target="_blank" rel="noreferrer">生活美学：极简工作流的实践笔记</a></li>
+      </ol>
+    </section>
+  </main>
+</body>
+</html>
